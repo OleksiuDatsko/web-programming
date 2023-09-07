@@ -1,0 +1,29 @@
+section.header {
+    padding-top: 62px;
+}
+
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav ul {
+    display: flex;
+    font-size: 14px;
+    align-items: baseline
+}
+
+.header__nav-item.first {
+    color: #1F1534;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header__nav-item {
+    display: flex;
+    margin-right: 40px;
+    color:#1F1534;
+    font-size: 18px;
+    font-weight: 400;
+}

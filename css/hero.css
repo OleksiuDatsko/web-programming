@@ -1,0 +1,38 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.hero {
+    background-image: url("../images/element.svg");
+    background-repeat: no-repeat;
+    background-position: top -50%;
+
+}
+
+.hero__text {
+    width: 500px;
+    padding-top: 191px;
+    padding-bottom: 154px;
+    padding-right: 109px;
+
+}
+
+.title.hero {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.paragraph.hero {
+    color: #7D7987;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.hero__image {
+    width: 639px;
+    height: 598px;
+}

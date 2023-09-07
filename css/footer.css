@@ -1,0 +1,37 @@
+section.footer {
+    background:
+        url("../images/element.svg") no-repeat left bottom,
+        linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteiner.footer {
+    height: 165px;
+}
+
+
+.footer__nav ul {
+    display: flex;
+    font-size: 14px;
+    align-items: baseline
+}
+
+.footer__nav-item.first {
+    color: #1F1534;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer__nav-item {
+    display: flex;
+    margin-right: 166px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 60px;
+}
