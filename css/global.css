@@ -27,7 +27,7 @@ li {
 }
 
 .default-button.filled,
-.default-button.outline:hover {
+.default-button.outline:active {
     color: #FFF;
     border: 0;
     background: #458FF6;
@@ -35,12 +35,11 @@ li {
 }
 
 .default-button.outline,
-.default-button.filled:hover {
+.default-button.filled:active {
     color: #458FF6;
     border: 1.4px solid #458FF6;
     background-color: transparent;
 }
-
 
 .paragraph {
     color: #7D7987;
@@ -68,4 +67,17 @@ li {
     flex-shrink: 0;
     border-radius: 10px;
     background: #000;
+}
+
+.linear-sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 165px;
+}
+
+.linear-nav ul {
+    display: flex;
+    font-size: 14px;
+    align-items: baseline
 }

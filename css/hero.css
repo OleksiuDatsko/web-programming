@@ -20,14 +20,10 @@ section.hero {
 
 .title.hero {
     font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
 }
 
 .paragraph.hero {
-    color: #7D7987;
     font-size: 21px;
-    font-weight: 300;
     line-height: 32px;
 }
 
