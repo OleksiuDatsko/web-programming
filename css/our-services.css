@@ -33,6 +33,10 @@ section.our-services {
     padding-bottom: 72px;
     padding-top: 80px;
     padding-right: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .our-services__service {
