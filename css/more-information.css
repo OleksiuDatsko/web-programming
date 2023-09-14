@@ -1,0 +1,16 @@
+.more-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-information__image {
+    width: 650px;
+    height: 467px;
+}
+
+.more-information__text {
+    width: 550px;
+    padding-bottom: 154px;
+    padding-left: 109px;
+}

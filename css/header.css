@@ -1,0 +1,13 @@
+.header__nav-item.first {
+    color: #1F1534;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header__nav-item {
+    display: flex;
+    margin-right: 40px;
+    color:#1F1534;
+    font-size: 18px;
+    font-weight: 400;
+}
