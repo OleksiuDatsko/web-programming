@@ -75,6 +75,10 @@ ul {
     height: 165px;
 }
 
+.conteiner.linear-sections {
+    display: flex;
+}
+
 .linear-nav ul {
     display: flex;
     font-size: 14px;
@@ -105,7 +109,28 @@ ul {
         margin: 0 auto;
     }
 
-    .linear-nav {
-        display: none;
+    .linear-nav{
+        background: #FFF;
+        position: fixed;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+        clip-path: circle(0 at top);
+        transition: clip-path 0.5s ease-in;
     }
+
+    .linear-nav.open {
+        clip-path: circle(100% at top);
+        width: 100%;
+
+    }
+
+    .linear-nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
