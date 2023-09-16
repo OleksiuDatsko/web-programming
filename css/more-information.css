@@ -14,3 +14,14 @@
     padding-bottom: 154px;
     padding-left: 109px;
 }
+
+@media screen and (max-width: 1240px) { 
+    .more-information__image {
+        display: none;
+    }
+
+    .more-information__text {
+        padding: 0;
+    }
+
+}

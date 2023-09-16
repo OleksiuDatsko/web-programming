@@ -11,11 +11,14 @@
 
 <body>
     <section class="header">
-        <header class="conteiner linear-sections">
+        <header class="conteiner linear-sections header">
+            <div class="header__hamburger" onclick="toggleMenu()">
+                <img src="/images/hamburger.png" alt="Hamburger">
+            </div>
             <div class="logo">
                 <img src="images/logo.svg" alt="Trafalgar">
             </div>
-            <nav class="linear-nav">
+            <nav id="nav-links" class="linear-nav">
                 <ul>
                     <li><a class="header__nav-item first" href="">Home</a></li>
                     <li><a class="header__nav-item" href="">Find a doctor</a></li>
@@ -148,7 +151,7 @@
     <section class="footer">
         <footer class="conteiner linear-sections">
             <img class="logo" src="./images/white-logo.svg" alt="Trafalgar">
-            <nav class="linear-nav">
+            <nav id="nav-links" class="linear-nav">
                 <ul>
                     <li><a class="footer__nav-item" href="">Company</a></li>
                     <li><a class="footer__nav-item" href="">Region</a></li>

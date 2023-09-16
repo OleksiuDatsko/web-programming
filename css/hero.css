@@ -19,15 +19,33 @@ section.hero {
 }
 
 .title.hero {
-    font-size: 48px;
+    font-size: 3rem;
 }
 
 .paragraph.hero {
-    font-size: 21px;
+    font-size: 1.2rem;
     line-height: 32px;
 }
 
 .hero__image {
     width: 639px;
     height: 598px;
+}
+
+@media screen and (max-width: 1240px) { 
+    .hero   {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .hero__text {
+        padding: 0;
+        padding-top: 100px;
+    }
+
+    .hero__image {
+        width: 90%;
+    }
+
 }

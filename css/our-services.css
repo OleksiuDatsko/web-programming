@@ -57,11 +57,11 @@ section.our-services {
 }
 
 .title.our-services__service-item {
-    font-size: 24px;
+    font-size: 1.8rem;
 }
 
 .paragraph.our-services__service-item {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .our-services__service-item {
@@ -70,6 +70,15 @@ section.our-services {
     margin: 0;
 }
 
-.our-services__services-line {
-    display: flex;
+@media screen and (max-width: 1240px) {
+    .our-services__services {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+
+    }
+
+    .paragraph.our-services__service-item {
+        padding-bottom: 10%;
+    }
 }

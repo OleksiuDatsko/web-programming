@@ -7,7 +7,35 @@
 .header__nav-item {
     display: flex;
     margin-right: 40px;
-    color:#1F1534;
+    color: #1F1534;
     font-size: 18px;
     font-weight: 400;
+}
+
+.header__hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 1240px) {
+    .header__hamburger {
+        display: flex;
+        height: 49px;
+        width: auto;
+    }
+
+    .header__hamburger:active {
+        height: 48px;
+        width: auto;
+    }
+
+    section.header {
+        position: fixed;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 35%);
+        width: 100%;
+    }
+
+    .linear-sections.header {
+        display: flex;
+        justify-content: space-between;
+    }
 }

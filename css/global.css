@@ -42,14 +42,14 @@ ul {
 
 .paragraph {
     color: #7D7987;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 28px;
 }
 
 .title {
     color: #000;
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 56px;
 }
@@ -79,4 +79,33 @@ ul {
     display: flex;
     font-size: 14px;
     align-items: baseline
+}
+
+@media screen and (max-width: 1240px) {
+    body {
+        text-align: center;
+    }
+
+    .conteiner {
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    .linear-sections {
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+    }
+
+    .logo {
+        padding-left: 30px;
+    }
+
+    .line {
+        margin: 0 auto;
+    }
+
+    .linear-nav {
+        display: none;
+    }
 }
