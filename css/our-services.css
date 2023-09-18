@@ -42,6 +42,7 @@ section.our-services {
 .our-services__service {
     width: 350px;
     height: 354px;
+
     border-radius: 20px;
     background: #FFF;
     box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
@@ -54,6 +55,12 @@ section.our-services {
     margin-bottom: 35px;
     margin-left: 35px;
 
+    transition: width 0.5s, height 0.5s;
+}
+
+.our-services__service:hover {
+    width: 360px;
+    height: 364px;
 }
 
 .title.our-services__service-item {

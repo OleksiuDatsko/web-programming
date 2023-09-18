@@ -23,6 +23,17 @@ ul {
     border-radius: 55px;
     font-size: 18px;
     font-weight: 700;
+    box-shadow: none;
+    transition: background 0.2s, box-shadow 1s;
+}
+
+.default-button.outline:hover {
+    box-shadow: 44px 18px 296px -200px #458FF6 inset;
+}
+
+.default-button.filled:hover {
+    box-shadow: 44px 18px 296px -200px black inset;
+
 }
 
 .default-button.filled,
@@ -30,7 +41,7 @@ ul {
     color: #FFF;
     border: 0;
     background: #458FF6;
-
+    box-shadow: none;
 }
 
 .default-button.outline,
@@ -38,6 +49,7 @@ ul {
     color: #458FF6;
     border: 1.4px solid #458FF6;
     background-color: transparent;
+    box-shadow: none;
 }
 
 .paragraph {
@@ -109,7 +121,7 @@ ul {
         margin: 0 auto;
     }
 
-    .linear-nav{
+    .linear-nav {
         background: #FFF;
         position: fixed;
         width: 100%;
