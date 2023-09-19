@@ -52,11 +52,10 @@ section.our-services {
   margin-bottom: 35px;
   margin-left: 35px;
 
-  transition: width 0.5s, height 0.5s;
+  transition: height 1s;
 }
 
 .our-services__service:hover {
-  width: 360px;
   height: 364px;
 }
 
@@ -74,8 +73,9 @@ section.our-services {
   margin: 0;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1240px) and (min-width: 500px){
   .our-services__services {
+    display: flex;
     width: 100%;
     height: auto;
     justify-content: center;
@@ -84,4 +84,14 @@ section.our-services {
   .paragraph.our-services__service-item {
     padding-bottom: 10%;
   }
+}
+
+@media screen and (max-width: 500px) {
+    .our-services__service {
+      margin: 10px auto;
+      width: 90%;
+
+      display: flex;
+      align-items: center;
+    }
 }
