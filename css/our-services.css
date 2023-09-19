@@ -1,91 +1,87 @@
 .our-services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 section.our-services {
-    background:
-        url("../images/vector.svg") no-repeat 0 33%,
-        url("../images/element.svg") no-repeat 100% 103%;
+  background: url("../images/vector.svg") no-repeat 0 33%,
+    url("../images/element.svg") no-repeat 100% 103%;
 
-    padding-bottom: 218px;
+  padding-bottom: 218px;
 }
 
 .conteiner.our-services {
-    background-image: url("../images/element.svg");
-    background-repeat: no-repeat;
-    background-position: right 52%;
-
+  background-image: url("../images/element.svg");
+  background-repeat: no-repeat;
+  background-position: right 52%;
 }
 
 .our-services__top-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .paragraph.our-services {
-    text-align: center;
+  text-align: center;
 }
 
 .our-services__services {
-    padding-bottom: 72px;
-    padding-top: 80px;
-    padding-right: 12px;
+  padding-bottom: 72px;
+  padding-top: 80px;
+  padding-right: 12px;
 
-    display: flex;
-    flex-wrap: wrap;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .our-services__service {
-    width: 350px;
-    height: 354px;
+  width: 350px;
+  height: 354px;
 
-    border-radius: 20px;
-    background: #FFF;
-    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
 
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
 
-    margin-bottom: 35px;
-    margin-left: 35px;
+  margin-bottom: 35px;
+  margin-left: 35px;
 
-    transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
 }
 
 .our-services__service:hover {
-    width: 360px;
-    height: 364px;
+  width: 360px;
+  height: 364px;
 }
 
 .title.our-services__service-item {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .paragraph.our-services__service-item {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .our-services__service-item {
-    padding-left: 45px;
-    padding-right: 45px;
-    margin: 0;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1240px) {
-    .our-services__services {
-        width: 100%;
-        height: auto;
-        justify-content: center;
+  .our-services__services {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
 
-    }
-
-    .paragraph.our-services__service-item {
-        padding-bottom: 10%;
-    }
+  .paragraph.our-services__service-item {
+    padding-bottom: 10%;
+  }
 }

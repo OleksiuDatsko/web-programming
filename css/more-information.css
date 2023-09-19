@@ -1,27 +1,26 @@
 .more-information {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .more-information__image {
-    width: 650px;
-    height: 467px;
+  width: 650px;
+  height: 467px;
 }
 
 .more-information__text {
-    width: 550px;
-    padding-bottom: 154px;
-    padding-left: 109px;
+  width: 550px;
+  padding-bottom: 154px;
+  padding-left: 109px;
 }
 
-@media screen and (max-width: 1240px) { 
-    .more-information__image {
-        display: none;
-    }
+@media screen and (max-width: 1240px) {
+  .more-information__image {
+    display: none;
+  }
 
-    .more-information__text {
-        padding: 0;
-    }
-
+  .more-information__text {
+    padding: 0;
+  }
 }
