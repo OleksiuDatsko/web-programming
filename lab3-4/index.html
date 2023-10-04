@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel</title>
+  <link href="https://fonts.cdnfonts.com/css/muli" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+  <section class="conteiner header">
+    <div class="header__left">
+      <h1 class="header__logo">Hotels <b>Manager</b></h1>
+      <nav>
+        <a href="add_new_hotel.html">Add new hotel</a>
+    </nav>
+    </div>
+    <div class="header__right">
+      <form id="find-hotel">
+        <label>
+          Find Hotel
+          <input type="text" name="" id="input-name-hotel" placeholder="Input hotel name...">
+        </label>
+        <button type="button" id="search-name-hotel">Search</button>
+        <button type="button" id="clear-name-hotel">Clear</button>
+      </form>
+    </div>
+  </section>
+  <section class="modal-window-edit" id="modal-window">
+    <form id="modal-edit-hotel" class="modal-window__form">
+      <h3>
+        Edit hotel
+      </h3>
+      <input type="text" style="display: none;" id="edit-hotel--id">
+      <label for="hotel-name">
+        Name:
+      </label>
+      <input type="text" name="hotel-name edit-hotel" id="edit-hotel--name">
+      <label for="total-visitors">
+        Total visitors:
+      </label>
+      <input type="number" name="total-visitors edit-hotel" id="edit-hotel--total-visitors">
+      <label for="total-rooms">
+        Total rooms:
+      </label>
+      <input type="number" name="total-rooms edit-hotel" id="edit-hotel--total-rooms">
+      <button type="button" id="confirm-edit-hotel">
+        Confirm
+      </button>
+    </form>
+  </section>
+  <section class="conteiner hero">
+    <aside class="hotel-manage">
+      <div class="hotel-manage__sort">
+        <h2 class="hotel-manage__title">
+          Hotel Manage
+        </h2>
+        <form id="sort-hotels">
+          <ul>
+            <li class="hotel-manage__sorted-by">
+              <label>
+                <input type="radio" name="sort-by" value="name">
+                Sorted by name
+              </label>
+            </li>
+            <li class="hotel-manage__sorted-by">
+              <label>
+                <input type="radio" name="sort-by" value="total_visitors">
+                Sorted by total visitors
+              </label>
+            </li>
+            <li class="hotel-manage__sorted-by">
+              <label>
+                <input type="radio" name="sort-by" value="total_rooms">
+                Sorted by total rooms
+              </label>
+            </li>
+            <li>
+              <button type="button" id="sort-button">Sort</button>
+            </li>
+          </ul>
+        </form>
+
+      </div>
+      <div class="hotel-manage__count-visitiors">
+        <h3 class="hotel-manage__title">
+          Count total visitors
+        </h3>
+        <div class="one-row">
+          <p class="hotel-manage__total-visitors--text">
+            Totla visitors:
+          </p>
+          <p class="hotel-manage__total-visitors--value" id="total-visitors">
+            0
+          </p>
+        </div>
+        <button type="button" id="count">Count</button>
+      </div>
+    </aside>
+    <section class="hotels">
+      <ul class="hotels__list" id="items-hotels">
+      </ul>
+    </section>
+  </section>
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

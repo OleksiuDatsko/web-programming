@@ -1,0 +1,35 @@
+.hotel-manage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-star;
+}
+
+aside.hotel-manage {
+  border-right: 1px solid black;
+  width: 25%;
+  padding-right: 20px;
+}
+
+section.hotel-manage {
+  align-items: center;
+}
+
+.hotel-manage__sort {
+  padding-bottom: 10px;
+}
+
+.hotel-manage__add-new-hotel--form > label,
+.hotel-manage__add-new-hotel--form > button {
+  display: block;
+}
+
+.hotel-manage__title {
+  padding-bottom: 5px;
+  border-bottom: 2px dotted black;
+}
+
+.hotel-manage__total-visitors--value {
+  font-weight: bolder;
+}
+
+

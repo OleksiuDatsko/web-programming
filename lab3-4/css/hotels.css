@@ -1,0 +1,25 @@
+section.hotels {
+  width: 75%;
+}
+
+.hotels__list {
+  margin-left: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.hotels__list--item {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 225px;
+  width: 200px;
+  margin-top: 10px;
+  margin-right: 10px;  
+
+}
+
+.hotels__hotel {
+  margin: 10px;
+}
