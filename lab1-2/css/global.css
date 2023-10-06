@@ -1,0 +1,167 @@
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.conteiner {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.default-button {
+  width: 200px;
+  height: 56px;
+  border-radius: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: none;
+  transition: background 0.2s, box-shadow 1s;
+}
+
+.default-button.outline:hover {
+  box-shadow: 44px 18px 296px -200px #458ff6 inset;
+}
+
+.default-button.filled:hover {
+  box-shadow: 44px 18px 296px -200px black inset;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.default-button.pulse {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+
+.default-button.filled,
+.default-button.outline:active {
+  color: #fff;
+  border: 0;
+  background: #458ff6;
+  box-shadow: none;
+}
+
+.default-button.outline,
+.default-button.filled:active {
+  color: #458ff6;
+  border: 1.4px solid #458ff6;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.paragraph {
+  color: #7d7987;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.title {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.logo {
+  width: 160px;
+  height: 41px;
+  background: transparent;
+}
+
+.line {
+  width: 56px;
+  height: 2px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #000;
+}
+
+.linear-sections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 165px;
+}
+
+.conteiner.linear-sections {
+  display: flex;
+}
+
+.linear-nav ul {
+  display: flex;
+  font-size: 14px;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 1240px) {
+  body {
+    text-align: center;
+  }
+
+  .conteiner {
+    margin: 0 auto;
+    width: 80vw;
+  }
+
+  .linear-sections {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+  }
+
+  .logo {
+    padding-left: 30px;
+  }
+
+  .line {
+    margin: 0 auto;
+  }
+
+  .linear-nav {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 75px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    clip-path: circle(0 at top);
+    transition: clip-path 0.5s ease-in;
+  }
+
+  .linear-nav.open {
+    clip-path: circle(100% at top);
+    width: 100%;
+  }
+
+  .linear-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+    .conteiner {
+      width: 2330px;
+    }
+}
