@@ -1,0 +1,36 @@
+html{
+  height: 100%;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  margin-top: 10px;
+}
+
+
+.conteiner {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.one-row {
+  display: flex;
+}
+
+.one-row>p{
+  margin-right: 10px;
+}

@@ -1,0 +1,29 @@
+.modal-window-edit {
+  display: none;
+
+  position: fixed;
+  top: 15%;
+  left: 30%;
+
+  border-radius: 10px;
+  border: 1px black solid;
+
+  background-color: white;
+
+  padding: 10px;
+
+  width: 500px;
+  height: 500px;
+}
+
+.modal-window-edit.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-window__form>label,
+.modal-window__form>input {
+  display: block;
+}

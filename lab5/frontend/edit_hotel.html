@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link href="https://fonts.cdnfonts.com/css/muli" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+    <section class="conteiner header">
+        <div class="header__left">
+            <h1 class="header__logo">Hotels <b>Manager</b></h1>
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </section>
+    <section class="conteiner hotel-manage" id="modal-window">
+        <form id="modal-edit-hotel" class="modal-window__form">
+            <h3>
+                Edit hotel
+            </h3>
+            <input type="text" style="display: none;" id="edit-hotel--id">
+            <label for="hotel-name">
+                Name:
+            </label>
+            <input type="text" name="hotel-name edit-hotel" id="edit-hotel--name">
+            <label for="total-visitors">
+                Total visitors:
+            </label>
+            <input type="number" name="total-visitors edit-hotel" id="edit-hotel--total-visitors">
+            <label for="total-rooms">
+                Total rooms:
+            </label>
+            <input type="number" name="total-rooms edit-hotel" id="edit-hotel--total-rooms">
+            <button type="button" id="confirm-edit-hotel">
+                Confirm
+            </button>
+        </form>
+    </section>
+    <script src="./js/edit_hotel.js" type="module"></script>
+</body>
+
+</html>
